@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти - Rock Portal</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">RockPortal</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="articles.html">Статті</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html" class="active">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-action">
+        <a href="login.html" class="btn btn-green">Вхід</a>
+      </div>
+    </header>
+
+    <main
+      class="content-container"
+      style="display: flex; gap: 40px; flex-wrap: wrap"
+    >
+      <div style="flex: 1; min-width: 300px">
+        <h1>Зв'яжіться з нами</h1>
+        <p>
+          Маєте питання, пропозиції або просто хочете обговорити останній
+          рок-концерт? Пишіть нам!
+        </p>
+
+        <div class="contact-block">
+          <p>
+            📧 <strong>Email:</strong>
+            <a
+              href="mailto:rockportal@example.com"
+              style="color: #46a358; text-decoration: none"
+              >rockportal@example.com</a
+            >
+          </p>
+          <p>
+            📞 <strong>Телефон:</strong>
+            <a
+              href="tel:+380000000000"
+              style="color: #46a358; text-decoration: none"
+              >+38 (000) 000-00-00</a
+            >
+          </p>
+          <p>
+            📍 <strong>Адреса:</strong>
+            <a
+              href="https://maps.app.goo.gl/QQPCCK54Fz2ejsk89"
+              target="_blank"
+              style="color: #46a358; text-decoration: none"
+              >м. Київ, вул. Рок-н-Ролу, 1</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          flex: 1;
+          min-width: 300px;
+          background: #f9f9f9;
+          padding: 20px;
+          border-radius: 8px;
+        "
+      >
+        <h2>Форма зворотнього зв'язку</h2>
+        <form action="contacts.html">
+          <div class="form-group">
+            <input type="text" placeholder="Ваше ім'я" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Ваш Email" required />
+          </div>
+          <div class="form-group">
+            <textarea
+              rows="4"
+              placeholder="Ваше повідомлення..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-green">Відправити</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 Rock Portal. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>

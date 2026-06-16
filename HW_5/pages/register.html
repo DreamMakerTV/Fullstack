@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація - Rock Portal</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body style="background-color: #f4f5f7">
+    <div class="auth-wrapper">
+      <div class="auth-box">
+        <a href="../index.html" class="auth-close">✕</a>
+
+        <div class="auth-title">
+          <a
+            href="login.html"
+            style="color: #ccc; text-decoration: none; font-weight: normal"
+            >Вхід</a
+          >
+          <span style="color: #ccc; margin: 0 10px">|</span>
+          <strong>Реєстрація</strong>
+        </div>
+
+        <p class="auth-desc">Введіть ваші дані для реєстрації.</p>
+
+        <form action="../index.html">
+          <div class="form-group">
+            <input type="text" placeholder="Ім'я користувача" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Введіть вашу email адресу"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Пароль" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Підтвердіть пароль" required />
+          </div>
+
+          <div
+            class="auth-actions"
+            style="justify-content: flex-start; font-size: 14px"
+          >
+            <label>
+              <input type="checkbox" required /> Я погоджуюсь з
+              <a href="#" style="color: #46a358; text-decoration: none"
+                >Умовами використання</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-green btn-block">
+            Зареєструватися
+          </button>
+        </form>
+
+        <div class="divider">Або зареєструйтесь через</div>
+
+        <button class="btn btn-outline btn-block">Продовжити з Google</button>
+        <button class="btn btn-outline btn-block">Продовжити з Facebook</button>
+      </div>
+    </div>
+  </body>
+</html>
