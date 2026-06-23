@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPortal | Normalize</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style-index.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="page-title">RockPortal (Normalize & Float)</h1>
+      <a href="reset.html" class="nav-link">Перейти до версії Reset & Flex ➔</a>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2 class="sticky-subtitle">Нормалізація vs Скидання стилів</h2>
+        <p>
+          <strong>Опис експерименту:</strong> Контент на обох сторінках
+          ідентичний, але побудований різними CSS-методами. Тут працює
+          normalize.css, а позиціонування побудовано на Float, Block/Inline та
+          Absolute.
+        </p>
+      </section>
+
+      <section class="card display-wrapper">
+        <h2>Тест відображення елементів</h2>
+        <div class="element-div">Це тег div (Елемент 1)</div>
+        <span class="element-span">Це тег span (Елемент 2)</span>
+        <span class="element-span">Це тег span (Елемент 3)</span>
+        <div class="box-sizing-test">
+          Я маю властивість box-sizing: border-box. Моя рамка (10px) та відступи
+          (20px) включені у мою загальну ширину 100%, тому я не вилажу за межі
+          екрану!
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Легенди Року (Layout)</h2>
+        <div class="layout-container">
+          <div class="band-card">Iron Maiden</div>
+          <div class="band-card">Judas Priest</div>
+          <div class="band-card">Kiss</div>
+          <div class="clear-fix"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Експеримент з текстом (Overflow)</h2>
+        <div class="overflow-box">
+          <p>
+            Історія хеві-металу починається наприкінці 1960-х. Це спеціально
+            дуже довгий текст. Розміри цього контейнера обмежені. Оскільки
+            тексту багато, він виходить за межі. Подивимось, як різні CSS-методи
+            впораються з цим блоком на обох сторінках!
+          </p>
+          <p>Ще трохи тексту для маси. Rock is alive!</p>
+        </div>
+      </section>
+
+      <section class="card position-wrapper">
+        <h2>Позиціонування блоків</h2>
+        <p>
+          Це батьківський контейнер. А десь тут є спеціальний блок, який
+          поводиться по-різному!
+        </p>
+        <div class="special-box">Я особливий блок!</div>
+      </section>
+
+      <div class="scroll-spacer">
+        <p>Гортай нижче...</p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <p>Кінець сторінки! 🤘</p>
+      </div>
+    </main>
+  </body>
+</html>
