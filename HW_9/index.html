@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="top-section">
+      <header class="header container">
+        <nav class="nav">
+          <a href="#" class="nav-link active">HOME</a>
+          <a href="#" class="nav-link">ABOUT</a>
+          <a href="#" class="nav-link">WORKS</a>
+          <a href="#" class="nav-link">PROCESS</a>
+          <a href="#" class="nav-link">CONTACTS</a>
+        </nav>
+      </header>
+
+      <section class="hero container">
+        <div class="hero-content">
+          <h1 class="title">Design and Layout</h1>
+          <p class="text">
+            Lorem Ipsum is a placeholder text commonly used in printing and web
+            design. Lorem Ipsum has been the standard dummy text for Latin
+            scripts since the 16th century.
+          </p>
+          <a href="#" class="btn">WRITE TO ME</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="about">
+      <div class="container section-center">
+        <h2 class="title">About Me</h2>
+        <p class="text text-center">
+          Lorem Ipsum is a placeholder text commonly used in printing and web
+          design. Lorem Ipsum has been the standard dummy text for Latin scripts
+          since the 16th century.
+        </p>
+      </div>
+    </section>
+
+    <section class="stats section-accent">
+      <div class="container stats-flex">
+        <img src="images/numbers__item.svg" alt="40+ projects" />
+        <img src="images/numbers__item.svg" alt="40+ projects" />
+        <img src="images/numbers__item.svg" alt="40+ projects" />
+        <img src="images/numbers__item.svg" alt="40+ projects" />
+        <img src="images/numbers__item.svg" alt="40+ projects" />
+        <img src="images/numbers__item.svg" alt="40+ projects" />
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="title">How I Work</h2>
+          <p class="text text-center">
+            Lorem Ipsum is a placeholder text commonly used in printing and web
+            design. Lorem Ipsum has been the standard dummy text for Latin
+            scripts since the 16th century.
+          </p>
+        </div>
+
+        <div class="video-wrapper">
+          <img
+            src="images/Rectangle_5.png"
+            alt="Video Background"
+            class="video-bg"
+          />
+          <button class="play-btn">
+            <img src="images/play-button.png" alt="Play" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-accent">
+      <div class="container footer-content">
+        <p class="footer-name">Ostap Ivanenko</p>
+        <p class="footer-copy">© 2018. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
