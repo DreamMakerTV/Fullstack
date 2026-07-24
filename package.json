@@ -1,0 +1,27 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "**Rock Portal** — це багатосторінковий веб-сайт, створений для справжніх поціновувачів рок-музики, важких рифів та глибоких текстів. Проєкт об'єднує однодумців та слугує зручним майданчиком для пошуку свіжих музичних новин, історії легендарних гуртів та спілкування.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamMakerTV/Fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DreamMakerTV/Fullstack/issues"
+  },
+  "homepage": "https://github.com/DreamMakerTV/Fullstack#readme",
+  "devDependencies": {
+    "sass": "^1.101.7",
+    "vite": "^8.1.5"
+  }
+}
