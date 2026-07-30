@@ -1,0 +1,38 @@
+.shape {
+  stroke-width: 5px;
+}
+
+.square {
+  fill: #ffd700;
+  stroke: #ff8c00;
+}
+
+.rectangle {
+  fill: #98fb98;
+  stroke: #2e8b57;
+}
+
+.ellipse {
+  fill: #87cefa;
+  stroke: #4169e1;
+}
+
+.circle {
+  fill: #ffa07a;
+  stroke: #dc143c;
+}
+
+.animated-shape {
+  animation: colorChange 3s infinite alternate ease-in-out;
+}
+
+@keyframes colorChange {
+  0% {
+    fill: #ffa07a;
+    stroke: #dc143c;
+  }
+  100% {
+    fill: #9370db;
+    stroke: #4b0082;
+  }
+}
