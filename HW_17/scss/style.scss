@@ -1,0 +1,44 @@
+$brand-color: #46a358;
+$slider-height-desktop: 250px;
+$slider-height-mobile: 300px;
+$border-radius: 8px;
+
+@mixin cover-image {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: $border-radius;
+  background-color: #212529;
+}
+
+@mixin respond-to-mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+body {
+  .custom-slider-img {
+    height: $slider-height-desktop;
+    @include cover-image;
+
+    @include respond-to-mobile {
+      height: $slider-height-mobile;
+    }
+  }
+
+  .accordion {
+    .accordion-item {
+      .accordion-button {
+        &:not(.collapsed) {
+          background-color: $brand-color;
+          color: white;
+
+          &::after {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
+}

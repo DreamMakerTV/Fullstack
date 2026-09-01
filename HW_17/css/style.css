@@ -1,0 +1,22 @@
+body .custom-slider-img {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  background-color: #212529;
+}
+@media (max-width: 767px) {
+  body .custom-slider-img {
+    height: 300px;
+  }
+}
+body .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #46a358;
+  color: white;
+}
+body .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+/*# sourceMappingURL=style.css.map */
