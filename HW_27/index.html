@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Слайдер</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+      .slider-wrapper {
+        max-width: 600px;
+        text-align: center;
+      }
+      #slide {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      #dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .dot-item {
+        cursor: pointer;
+        padding: 5px;
+      }
+      .dot {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        border-radius: 50%;
+      }
+      .dot-item.active .dot {
+        background: #007bff;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-wrapper">
+      <img id="slide" src="" alt="Слайд" />
+
+      <div class="controls">
+        <button id="prev-btn">Попередній</button>
+        <button id="next-btn">Наступний</button>
+      </div>
+
+      <ul id="dots"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
