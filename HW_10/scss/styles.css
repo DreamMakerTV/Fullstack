@@ -1,0 +1,267 @@
+.video-wrapper, .video-wrapper .play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.64;
+  color: rgb(114, 114, 114);
+}
+@media (max-width: 480px) {
+  .text {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+.section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 541px;
+  margin: 0 auto;
+}
+
+.section-accent {
+  background-color: rgb(52, 84, 122);
+}
+
+.top-section {
+  background-color: rgb(238, 239, 241);
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding-top: 40px;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.64;
+  letter-spacing: 0.1em;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+  color: rgb(52, 84, 122);
+}
+
+.hero {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.hero-content {
+  max-width: 541px;
+}
+.hero-content .text {
+  margin-bottom: 45px;
+}
+@media (max-width: 480px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 84, 122);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 143px;
+  height: 45px;
+  transition: filter 0.3s ease;
+}
+.btn:hover {
+  filter: brightness(1.15);
+}
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.about {
+  background-color: rgb(255, 255, 255);
+  padding: 120px 0;
+}
+@media (max-width: 992px) {
+  .about {
+    padding: 60px 0;
+  }
+}
+
+.stats {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.stats-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .stats-flex {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .stats-flex img {
+    width: 120px;
+  }
+}
+
+.work {
+  background-color: rgb(238, 239, 241);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.work .text {
+  margin-bottom: 50px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.video-wrapper .video-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-wrapper .play-btn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.video-wrapper .play-btn:hover {
+  transform: scale(1.1);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 90px;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 480px) {
+  .footer-content {
+    align-items: center;
+    text-align: center;
+  }
+}
+.footer-name {
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.footer-copy {
+  font-weight: 400;
+  font-size: 13px;
+}/*# sourceMappingURL=styles.css.map */
